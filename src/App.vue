@@ -55,7 +55,7 @@
                   <td> <a v-bind:href="book.url">{{ book.title }}</a></td>
                   <td> {{ book.author }}</td>
                   <td> {{ book.isbn }}</td>
-                  <td><span style="cursor: pointer;" class="glyphicon glyphicon-trash" aria-hidden="true" v-on:click="deleteBook(book)"></span></td>
+                  <td><span style="cursor: pointer;" class="glyphicon glyphicon-trash pull-right" aria-hidden="true" v-on:click="deleteBook(book)"></span></td>
                 </tr>
               </tbody>
             </table>
