@@ -26,7 +26,7 @@
               </div>
               <div class="form-group">
                   <label for="url">URL:</label>
-                  <input type="text" class="form-control" id="url" v-model="newBook.url" required/>
+                  <input type="url" class="form-control" id="url" v-model="newBook.url" required/>
               </div>
               <input type="submit" class="btn btn-primary" value="Add Book"/>
           </form>
@@ -101,7 +101,7 @@ export default {
         title: '',
         author: '',
         isbn: '',
-        url: 'http://'
+        url: ''
       }
     }
   },
@@ -112,7 +112,7 @@ export default {
         this.newBook.title = '';
         this.newBook.author = '';
         this.newBook.isbn = '';
-        this.newBook.url = 'http://';
+        this.newBook.url = '';
     },
 
     deleteBook: function(book) {
